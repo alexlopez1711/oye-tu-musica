@@ -1,0 +1,99 @@
+/* App.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #e8e5eea6;
+    
+    
+  }
+  
+  input[type="text"],
+  button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #0074d9;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .movie-card {
+    width: calc(25% - 20px); /* 25% para 4 columnas, con 20px de espacio entre ellas */
+    margin-bottom: 20px;
+    border: 1px solid #080808;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  button {
+    margin-top: auto; /* Centra el botón en la parte inferior */
+  }
+
+  .movie-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 500px) {
+    .movie-list {
+      flex-direction: column; /* Cambia a una sola columna */
+    }
+  
+    .movie-card {
+      width: 100%; /* Ocupa todo el ancho disponible */
+    }
+  }
+
+  #videoModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Coloca el botón en la parte inferior */
+  }
+  
+  #videoFrame {
+    width: 80%; /* Ajusta el ancho del video dentro del modal */
+    height: 65vh; /* Ajusta la altura del video dentro del modal */
+    margin-top: 130px;
+  }
+  
+  #closeModal {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px; /* Espacio entre el video y el botón */
+  }
