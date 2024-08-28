@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Modal from './Modal'; // Importa el componente Modal
+import Modal from './Modal';
 import './App.css';
 
 const App = () => {
   const urlBase = 'https://www.googleapis.com/youtube/v3/search';
-  const API_KEY = 'AIzaSyBm6fzFlzwXuHQ8hLwYjlIB_kSi7QHlLI0'; // Reemplaza con tu clave de API
+  const API_KEY = 'AIzaSyD_wf_1005RSeifPV154YucVmZwICZo3Aw';
 
   const [busqueda, setBusqueda] = useState('');
   const [peliculas, setPeliculas] = useState([]);
@@ -43,9 +43,9 @@ const App = () => {
   };
 
   useEffect(() => {
-    // Cargar sugerencias de YouTube al cargar la página
+    
     fetchPeliculas();
-  }, []); // El segundo argumento vacío asegura que se ejecute solo una vez al montar el componente
+  }, []);
 
   return (
     <div className="container">
