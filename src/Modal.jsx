@@ -15,4 +15,4 @@ const Modal = ({ videoId, onClose }) => {
   );
 };
 
-export default Modal;
+export default Modal; 
